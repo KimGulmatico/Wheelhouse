@@ -1,6 +1,8 @@
 import React, { Component } from 'react';
 import NavBar from './Components/Navbar'
+import Card from './Components/Card'
 import './App.css';
+import Body from './Components/Body';
 
 class App extends Component {
   constructor(props){
@@ -13,11 +15,13 @@ class App extends Component {
   render() {
     return (
       <div>
-        <div className="uk-section-primary uk-preserve-color uk-background-default">
+        <div className="uk-section-primary uk-preserve-color uk-background-default bodyHome">
         <div className="uk-position-relative">
-        <img src="/images/home.jpg" alt=""/>
+        <div style={{overflow: 'hidden'}}>
+        <img src="/images/home.jpg" alt="" style={{minHeight: '500px', minWidth: '500px'}}/>
+        </div>
         <div className="uk-position-top">
-        <NavBar item1="kim"/>
+        <NavBar/>
         </div>
         </div>
 
@@ -37,14 +41,14 @@ class App extends Component {
         </div>
         </div>
 
-        <div className="uk-section">
-            <div className="uk-container">
-            </div>
+        <div style={{width: '100%'}} align="center" className="bodyHome">
+          <Card/>
         </div>
 
-        
-
+        <div style={{width: '100%'}} className="white">
+          <Body/>
         </div>
+      </div>
       </div>
     );
   }

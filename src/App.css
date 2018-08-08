@@ -2,6 +2,48 @@
   text-align: center;
 }
 
+.body {
+  background-color: #f5f5f5;
+}
+.bodyHome {
+  background-color: #f5f5f5;
+}
 .navDark {
   background-color: #222 !important;
+}
+
+.card {
+  margin:  50px;
+}
+
+.white{
+  background-color:  white;
+}
+
+.cardText {
+  font-weight: bold;
+}
+
+.hr {
+  width: 100px;
+  
+}
+
+.padding {
+  padding: 20px;
+}
+
+.round {
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+.bodyTop {
+  
+}
+
+@media only screen and (max-width: 600px) {
+  .card {
+    margin: 20px;
+  }
 }
