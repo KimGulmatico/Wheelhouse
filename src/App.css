@@ -38,9 +38,11 @@
   border-radius: 5px;
 }
 
-.bodyTop {
-  
+.eventsTitle {
+  padding: 20px;
 }
+
+
 
 @media only screen and (max-width: 600px) {
   .card {
