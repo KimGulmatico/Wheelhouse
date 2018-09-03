@@ -1,5 +1,8 @@
 import React, {Component} from 'react'
 import Events from './Events'
+import Community from './Community'
+import Plans from './Plans'
+import ContactUs from './ContactUs'
 
 class Body extends Component {
     constructor(props){
@@ -103,6 +106,13 @@ class Body extends Component {
                 <hr class="uk-divider-icon"/>
 
                 <Events/>
+                <br/>
+                <br/>
+                <Community/>
+                <br/>
+                <br/>
+                <Plans/>
+                {/* <ContactUs/> */}
             </div>
 
         )

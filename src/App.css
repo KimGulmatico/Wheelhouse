@@ -42,10 +42,20 @@
   padding: 20px;
 }
 
+.eventsImage {
+  width: 300px;
+  height: auto;
+}
+
 
 
 @media only screen and (max-width: 600px) {
   .card {
     margin: 20px;
+  }
+
+  .eventsImage {
+    width: 100%;
+    height: auto;
   }
 }
