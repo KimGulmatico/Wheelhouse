@@ -72,12 +72,14 @@ class Navbar extends Component {
                                 (this.state.width <= 500) ?                  
                                 <div></div>
                                 :
+                                <div className="uk-display-inline">
                                 <ul className="uk-navbar-nav" style={{marginTop: '25px', marginLeft: '30px'}}>
-                                    <li><a href="#">Plans</a></li>
-                                    <li><a href="#">Community</a></li>
-                                    <li><a href="#">Events</a></li>
-                                    <li><a href="#">Contact us</a></li>
+                                    <li><a href="#events" data-uk-scroll data-offset="100">Events</a></li>
+                                    <li><a href="#community" data-uk-scroll data-offset="100">Community</a></li>
+                                    <li><a href="#plans" data-uk-scroll data-offset="100">Plans</a></li>
+                                    <li><a data-uk-toggle="target: #modal-full">Contact us</a></li>
                                 </ul>
+                                </div>
                             }
                         </div>
                         <div className="uk-navbar-right">     

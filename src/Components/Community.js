@@ -9,7 +9,7 @@ class Community extends Component {
     }
 
     render() {
-        return (<div >
+        return (<div id="community">
             <div style={{ maxWidth: '1300px' }}>
                 <div align="left" className="eventsTitle">
                     <p className="uk-h1 cardText">COMMUNITY INSIGHTS</p>

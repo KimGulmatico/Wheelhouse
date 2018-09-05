@@ -7,7 +7,7 @@ class Plans extends Component {
     }
 
     render() {
-        return (<div >
+        return (<div id="plans">
             <div style={{ maxWidth: '1300px' }}>
                 <div align="left" className="eventsTitle">
                     <p className="uk-h1 cardText">PLANS & PRICING</p>

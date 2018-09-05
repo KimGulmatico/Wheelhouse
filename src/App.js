@@ -50,16 +50,53 @@ class App extends Component {
         </div>
       </div>
 
-      <button className="uk-button uk-button-default uk-margin-small-right" type="button" data-uk-toggle="target: #modal-full">Open</button>
+      {/* <button className="uk-button uk-button-default uk-margin-small-right" type="button" data-uk-toggle="target: #modal-full">Open</button> */}
 
       <div id="modal-full" className="uk-modal-full" data-uk-modal>
           <div className="uk-modal-dialog">
               <button className="uk-modal-close-full uk-close-large" type="button" data-uk-close></button>
               <div className="uk-grid-collapse uk-child-width-1-2@s uk-flex-middle" data-uk-grid>
-                  <div className="uk-background-cover" style={{backgroundImage: "url('images/home.jpg')"}} data-uk-height-viewport></div>
+                  <div className="uk-background-cover uk-flex uk-flex-center uk-flex-middle" style={{backgroundImage: "url('images/home.jpg')"}} data-uk-height-viewport>
+                    {/* <div>
+                    <p class="uk-h2">Call Us</p>
+                    <p class="uk-h5">Questions about plans, pricing, or availability? <br/> Just have your people call our people.</p>
+                    <p class="hk-h5">1-877-796-2434</p>
+                    </div> */}
+                  </div>
                   <div className="uk-padding-large">
-                      <h1>Headline</h1>
-                      <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                  <form>
+                    <fieldset className="uk-fieldset">
+
+                        <legend className="uk-legend">We’ll Follow Up
+                        <h6>One of our workspace experts will reach out to you, based on your communication preferences</h6>
+                        </legend>
+                    
+                        <div className="uk-margin">
+                            <input className="uk-input input" type="text" placeholder="Full name"/>
+                        </div>
+
+                        <div className="uk-margin">
+                            <input className="uk-input input" type="text" placeholder="Company name"/>
+                        </div>
+
+                        <div className="uk-margin">
+                            <input className="uk-input input" type="text" placeholder="Email address"/>
+                        </div>
+
+                        <div className="uk-margin">
+                            <input className="uk-input input" type="text" placeholder="Phone number"/>
+                        </div>
+
+                        <div className="uk-margin">
+                            <textarea className="uk-textarea input" rows="3" placeholder="Notes"></textarea>
+                        </div>
+
+                        <p data-uk-margin align="right">
+                            <button class="uk-button uk-button-default buttonYellow">Submit</button>
+                        </p>
+
+                    </fieldset>
+                </form>
                   </div>
               </div>
           </div>
