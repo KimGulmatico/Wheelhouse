@@ -16,10 +16,11 @@ class Card extends Component {
                 <div className="uk-child-width-1-3@s uk-text-center" data-uk-grid data-uk-scrollspy="cls: uk-animation-fade; target: > div > .uk-card; delay: 500; repeat: true">
                     <div>
                         <div className="uk-box-shadow-large padding white">
-                            <img src="images/lamp.svg" width="150" height="150"/>
-                            <p className="uk-text-small">*starts at P300</p>
-                            <p className="uk-h1 cardText">office <br/> space</p>
-                            work any where in the space,<br/>anytime, the way you want it
+                            <img src="images/chair.svg" width="150" height="150"/>
+                            <p className="uk-h1 cardText">lounge <br/> <br/></p>
+                            Have the  flexibility to select where you <br/>sit everyday in our open lounge area
+                            <br/>
+                            <br/>
                             <br/>
                             <br/>
                             <button class="uk-button uk-button-default round">Reserve</button>
@@ -28,10 +29,35 @@ class Card extends Component {
 
                     <div>
                         <div className="uk-box-shadow-large padding white">
-                            <img src="images/chair.svg" width="150" height="150"/>
-                            <p className="uk-text-small">*starts at P999</p>
+                            <img src="images/lamp.svg" width="150" height="150"/>
                             <p className="uk-h1 cardText">dedicated <br/> desk</p>
-                            own up your space with a dedicated <br/> desk / work station with your own storage
+                            Keep the same desk everyday in a private floor shared with other professionals or in the open office areas
+                            <br/>
+                            <br/>
+                            <br/>
+                            <button class="uk-button uk-button-default round">Reserve</button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div className="uk-box-shadow-large padding white">
+                            <img src="images/office.svg" width="150" height="150"/>
+                            <p className="uk-h1 cardText">private <br/> office</p>
+                            Enjoy a convenient private office with sizes designed for teams of 5 to 15 people
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <button class="uk-button uk-button-default round">Reserve</button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div className="uk-box-shadow-large padding white">
+                            <img src="images/virtualoffice.svg" width="150" height="150"/>
+                            <p className="uk-h1 cardText">virtual <br/> office</p>
+                            Make The Wheelhouse your office address. This includes mail handling and meeting room access.
+                            <br/>
                             <br/>
                             <br/>
                             <button class="uk-button uk-button-default round">Reserve</button>
@@ -41,9 +67,21 @@ class Card extends Component {
                     <div>
                         <div className="uk-box-shadow-large padding white">
                             <img src="images/meetingrooms.svg" width="150" height="150"/>
-                            <p className="uk-text-small">*starts at P999</p>
                             <p className="uk-h1 cardText">meeting <br/> rooms</p>
-                            work any where in the space,<br/>anytime, the way you want it
+                            Engage with clients and discuss <br/> important details with privacy
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            <button class="uk-button uk-button-default round">Reserve</button>
+                        </div>
+                    </div>
+
+                    <div>
+                        <div className="uk-box-shadow-large padding white">
+                            <img src="images/rooflounge.svg" width="150" height="150"/>
+                            <p className="uk-h1 cardText">rooftop <br/> lounge</p>
+                            Network and share ideas with other founders, investors, media, industry executives, academics and creatives through curated private events on the rooftop
                             <br/>
                             <br/>
                             <button class="uk-button uk-button-default round">Reserve</button>

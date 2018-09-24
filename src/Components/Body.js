@@ -3,6 +3,7 @@ import Events from './Events'
 import Community from './Community'
 import Plans from './Plans'
 import ContactUs from './ContactUs'
+import Ameneties from './Ameneties'
 
 class Body extends Component {
     constructor(props){
@@ -27,11 +28,9 @@ class Body extends Component {
                             <p className="uk-h1 cardText">REDEFINE THE WAY <br/> YOU WORK</p>
                             <p className="uk-h5 cardText" style={{marginTop: '-17px'}}>Connect. Collaborate. Create</p>
                             <br/>
-                            The Wheelhouse is an initiative that connects aspiring entrepreneurs, startup mentors
-                            enables yearning to bring ideas into reality through meaningful social
-                            engagements and workshops in a collaborative space. A dynamic, forward-thinking
-                            community that provides expertise, support and connections that members can take
-                            advantage of to become effective entrepreneurs
+                            We redefine diversity and collaboration by creating a lifestyle space with a unique 
+                            entrepreneurial spirit that is responsive to the productivity needs and stylistic 
+                            preferences of today’s mobile and creative workforce.
                             </div>
                         </div>
                     </div>
@@ -47,8 +46,20 @@ class Body extends Component {
                         </div>
                         <div>
                             <div className="uk-card-body">
-                                <h3 className="uk-card-title">Media Left</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                <h3 className="uk-card-title">WE ARE MORE THAN JUST A SPACE</h3>
+                                <p className="uk-text-left"><b>Classes & Workshops</b> - our talented team offers a variety of classes and 
+                                   workshops on creative thinking, ideation techniques, problem reframing, 
+                                   presentation skills, project management, data visualization, and improv.
+                                </p>
+                                <p className="uk-text-left"><b>Consulting Services</b> - For businesses that want more hands on assistance we will
+                                   provide consulting services and employee training. 
+                                   Services might include: brainstorming facilitation, branding, innovative marketing, 
+                                   workspace and workflow analysis. 
+                                </p>
+                                <p className="uk-text-left"><b>Curated Events</b> - Meaningful events hosted by our own members. 
+                                    This provides our members to showcase who they are and what 
+                                    they can do for the community.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -60,8 +71,15 @@ class Body extends Component {
                         </div>
                         <div>
                             <div className="uk-card-body">
-                                <h3 className="uk-card-title">Media Right</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                <h3 className="uk-card-title">WE PROVIDE A NEW PERSPECTIVE</h3>
+                                <p className="">
+                                Wheelhouse creates an environment that 
+                                fosters innovation and ideation.
+                                </p>
+                                <p className="">
+                                We continue to develop creative habits 
+                                that put you ahead of the current, ensuring you are leading the competition.
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -104,7 +122,8 @@ class Body extends Component {
                     </div>
                 </div>
                 <hr class="uk-divider-icon"/>
-
+                <Ameneties/>
+                <hr class="uk-divider-icon"/>
                 <Events/>
                 <br/>
                 <br/>
