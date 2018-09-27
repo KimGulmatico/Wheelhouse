@@ -6,7 +6,7 @@
   background-color: #f5f5f5;
 }
 .bodyHome {
-  background-color: #f5f5f5;
+  background-color: white;
 }
 .navDark {
   background-color: #222 !important;
@@ -55,6 +55,25 @@
 .buttonYellow {
   background-color: #ffd16d;
 }
+
+.btnhover {
+  color: #999 !important;
+  border-color: #999 !important;
+}
+.btnhover:hover {
+  color: #666 !important;
+  border-color: #666 !important;
+}
+
+.btnhover2 {
+  color: #999 !important;
+  border-color: #999 !important;
+}
+.btnhover2:hover {
+  color: rgba(255,255,255,.7)!important;
+  border-color: rgba(255,255,255,.7) !important;
+}
+
 
 
 @media only screen and (max-width: 600px) {

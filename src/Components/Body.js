@@ -4,6 +4,8 @@ import Community from './Community'
 import Plans from './Plans'
 import ContactUs from './ContactUs'
 import Ameneties from './Ameneties'
+import Partners from './Partners'
+import Footer from './Footer'
 
 class Body extends Component {
     constructor(props){
@@ -132,6 +134,8 @@ class Body extends Component {
                 <br/>
                 <Plans/>
                 {/* <ContactUs/> */}
+                <Partners/>
+                <Footer/>
             </div>
 
         )

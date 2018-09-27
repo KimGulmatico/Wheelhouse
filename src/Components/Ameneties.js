@@ -14,7 +14,7 @@ class Ameneties extends Component {
                         <p className="uk-h5 cardText" style={{ marginTop: '-17px' }}></p>
                     </div>
                     
-                    <div style={{maxWidth: '800px'}}>
+                    <div style={{maxWidth: '1000px'}}>
                     <ul class="uk-child-width-1-2 uk-child-width-1-3@m uk-text-center" data-uk-grid>
                         <li>
                             <div class="uk-card uk-card-body">
@@ -74,9 +74,9 @@ class Ameneties extends Component {
                         </li>
                         <li>
                             <div class="uk-card uk-card-body">
-                                <img src="images/social-media.svg" width="80" height="80"/>
-                                <p className="uk-h5 cardText" style={{ marginTop: '5px' }}>MARKETING</p>
-                                advertise yourself! Get your name known in the community
+                                <img src="images/overcast.svg" width="80" height="80"/>
+                                <p className="uk-h5 cardText" style={{ marginTop: '5px' }}>ROOF DECK ACCESS</p>
+                                relax and take a selfie with Iloilo City’s majestic view
                             </div>
                         </li>
                     </ul>

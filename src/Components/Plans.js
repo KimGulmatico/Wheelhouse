@@ -163,6 +163,9 @@ class Plans extends Component {
                                     <li>Invites to Private Rooftop Events</li>
                                     <li> Invites to Members’ Events</li>
                                     <li>5 Free Guest Passes</li>
+                                    <li>Locker Privileges</li>
+                                    <li>4 Hours Meeting Room Usage</li>
+                                    <li>LIMITED MEMBERSHIP SLOTS</li>
                                 </ul>
                             </div>
                         </div>
