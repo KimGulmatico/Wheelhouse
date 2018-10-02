@@ -75,14 +75,14 @@ class Navbar extends Component {
 
                         <div class="uk-navbar-right" style={{marginLeft: 'auto', marginRight: '5%' }}>
                             <ul class="uk-navbar-nav uk-visible@l" style={{ marginLeft: 'auto', marginRight: '0' }}>
-                                <li><a href="#events" data-uk-scroll data-offset="100">Ameneties</a></li>
-                                <li><a href="#community" data-uk-scroll data-offset="100">Community</a></li>
+                                <li><a href="#about" data-uk-scroll data-offset="100">About</a></li>
+                                <li><a href="#ameneties" data-uk-scroll data-offset="100">Ameneties</a></li>
+                                <li><a href="#events" data-uk-scroll data-offset="100">Events</a></li>
+                                <li><a href="#community" data-uk-scroll data-offset="100">Community</a></li>                               
                                 <li><a href="#plans" data-uk-scroll data-offset="100">Plans</a></li>
-                                <li><a href="#plans" data-uk-scroll data-offset="100">Events</a></li>
-                                <li><a data-uk-toggle="target: #modal-full">Community</a></li>
-                                <li><a data-uk-toggle="target: #modal-full">Partners</a></li>
+                                <li><a href="#partners" data-uk-scroll data-offset="100">Partners</a></li>
                             </ul>
-                            <button className={"uk-visible@l uk-button uk-button-default "+this.state.btnhover} href="#" style={{ borderRadius: '50px'}}>Contact us</button>
+                            <button data-uk-toggle="target: #modal-full" className={"uk-visible@l uk-button uk-button-default "+this.state.btnhover} href="#" style={{ borderRadius: '50px'}}>Contact us</button>
                             <a className="uk-hidden@l uk-navbar-toggle" href="#" data-uk-icon="menu" data-uk-toggle="target: #offcanvas-flip" style={{ marginLeft: 'auto', marginRight: '0' }}></a>
                         </div>
                     </nav>

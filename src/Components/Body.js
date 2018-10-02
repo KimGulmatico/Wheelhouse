@@ -24,7 +24,7 @@ class Body extends Component {
                             <img className="uk-border-circle" src="images/avatar.jpg" width="350" height="350" alt="Border circle"/>
                         </div>
                     </div>
-                    <div style={{marginTop: '30px', marginBottom: '30px'}} align="left">
+                    <div id="about" style={{marginTop: '30px', marginBottom: '30px'}} align="left">
                         <div data-uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
                             <div style={{padding: '20px'}}>
                             <p className="uk-h1 cardText">REDEFINE THE WAY <br/> YOU WORK</p>

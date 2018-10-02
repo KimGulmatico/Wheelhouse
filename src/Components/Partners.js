@@ -7,7 +7,7 @@ class Partners extends Component {
     }
 
     render() {
-        return (<div id="ameneties">
+        return (<div id="partners">
         <div style={{ maxWidth: '1300px' }}>
             <div align="left" className="eventsTitle">
                 <p className="uk-h1 cardText">PARTNERS</p>

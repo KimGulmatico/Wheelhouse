@@ -74,6 +74,38 @@
   border-color: rgba(255,255,255,.7) !important;
 }
 
+.radioBox {
+  border: 1px solid #e5e5e5;
+  padding: 10px;
+  text-align: center;
+  height: 100%;
+}
+
+.col-container {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  width: 100%;
+}
+.col {
+  display: -webkit-box;
+  display: -moz-box;
+  display: -ms-flexbox;
+  display: -webkit-flex;
+  display: flex;
+  flex: 1;
+  padding: 10px;
+  border: 1px solid #e5e5e5;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  vertical-align: middle;
+  font-weight: bold;
+  font-size: 12px;
+}
+
 
 
 @media only screen and (max-width: 600px) {
