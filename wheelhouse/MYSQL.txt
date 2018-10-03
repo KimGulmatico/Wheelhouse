@@ -1,0 +1,14 @@
+CREATE TABLE EVENTS(
+	eventID int AUTO_INCREMENT PRIMARY KEY,
+    eventTitle varchar(300),
+    eventDate date,
+    eventBy varchar(300),
+    eventlocation varchar(500),
+    eventDescription varchar(3000),
+    eventImage varchar(1000)
+);
+
+CREATE TABLE PASSWORD (
+	passID int AUTO_INCREMENT PRIMARY KEY,
+    password varchar(500)
+);
