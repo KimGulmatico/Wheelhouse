@@ -23,7 +23,7 @@ class Card extends Component {
                             <br/>
                             <br/>
                             <br/>
-                            <button class="uk-button uk-button-default round">Reserve</button>
+                            <button data-uk-toggle="target: #modal-full" class="uk-button uk-button-default round">Reserve</button>
                         </div>
                     </div>
 
@@ -35,7 +35,7 @@ class Card extends Component {
                             <br/>
                             <br/>
                             <br/>
-                            <button class="uk-button uk-button-default round">Reserve</button>
+                            <button data-uk-toggle="target: #modal-full" class="uk-button uk-button-default round">Reserve</button>
                         </div>
                     </div>
 
@@ -48,7 +48,7 @@ class Card extends Component {
                             <br/>
                             <br/>
                             <br/>
-                            <button class="uk-button uk-button-default round">Reserve</button>
+                            <button data-uk-toggle="target: #modal-full" class="uk-button uk-button-default round">Reserve</button>
                         </div>
                     </div>
 
@@ -60,7 +60,7 @@ class Card extends Component {
                             <br/>
                             <br/>
                             <br/>
-                            <button class="uk-button uk-button-default round">Reserve</button>
+                            <button data-uk-toggle="target: #modal-full" class="uk-button uk-button-default round">Reserve</button>
                         </div>
                     </div>
 
@@ -73,7 +73,7 @@ class Card extends Component {
                             <br/>
                             <br/>
                             <br/>
-                            <button class="uk-button uk-button-default round">Reserve</button>
+                            <button data-uk-toggle="target: #modal-full" class="uk-button uk-button-default round">Reserve</button>
                         </div>
                     </div>
 
@@ -84,7 +84,7 @@ class Card extends Component {
                             Network and share ideas with other founders, investors, media, industry executives, academics and creatives through curated private events on the rooftop
                             <br/>
                             <br/>
-                            <button class="uk-button uk-button-default round">Reserve</button>
+                            <button data-uk-toggle="target: #modal-full" class="uk-button uk-button-default round">Reserve</button>
                         </div>
                     </div>
                 </div>

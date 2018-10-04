@@ -43,7 +43,7 @@ class Body extends Component {
                     <br/>
                     <div className="uk-card uk-grid-collapse uk-child-width-1-2@s" data-uk-grid>
                         <div className="uk-card-media-left uk-cover-container">
-                            <img src="images/home.jpg" alt="" data-uk-cover/>
+                            <img src="images/w1.jpg" alt="" data-uk-cover/>
                             <canvas width="600" height="400"></canvas>
                         </div>
                         <div>
@@ -68,7 +68,7 @@ class Body extends Component {
 
                     <div className="uk-card uk-grid-collapse uk-child-width-1-2@s" data-uk-grid>
                         <div className="uk-flex-last@s uk-card-media-right uk-cover-container">
-                            <img src="images/home.jpg" alt="" data-uk-cover/>
+                            <img src="images/w3.jpg" alt="" data-uk-cover/>
                             <canvas width="600" height="400"></canvas>
                         </div>
                         <div>
@@ -88,7 +88,7 @@ class Body extends Component {
 
                     <div className="uk-card uk-grid-collapse uk-child-width-1-2@s" data-uk-grid>
                         <div className="uk-card-media-left uk-cover-container">
-                            <img src="images/home.jpg" alt="" data-uk-cover/>
+                            <img src="images/w4.jpg" alt="" data-uk-cover/>
                             <canvas width="600" height="400"></canvas>
                         </div>
                         <div>
