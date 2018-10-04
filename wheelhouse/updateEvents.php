@@ -2,6 +2,7 @@
     header("access-control-allow-origin:*"); //allows cross domain
     include_once 'connection.php';
 
+    $id = clean($_POST['id']);
     $pass = clean($_POST['pass']);
     $title = clean($_POST['title']);
     $date = clean($_POST['date']);
@@ -9,7 +10,7 @@
     $loc = clean($_POST['loc']);
     $desc = clean($_POST['desc']);
 
-    if($pass == '' || $title == '' || $date=='' || $by=='' || $loc=='' || $date == ''){
+    if($pass == '' || $title == '' || $date=='' || $by=='' || $loc=='' || $date == '' || $id == ''){
         echo 'fill all fields';
         exit();
     }
@@ -47,11 +48,14 @@
         // if everything is ok, try to upload file
         } else {
             if (move_uploaded_file($_FILES["file"]["tmp_name"], $target_file)) {
-                $stmt = $conn->prepare("INSERT INTO EVENTS(eventTitle, eventDate, eventBy, eventlocation, eventDescription, eventImage)
-                VALUES ('".$title."', '".$date."', '".$by."', '".$loc."', '".$desc."', '".$img."')");
+                $stmt = $conn->prepare("UPDATE EVENTS SET 
+                eventTitle='".$title."', eventDate='".$date."', 
+                eventBy='".$by."', eventlocation='".$loc."', 
+                eventDescription='".$desc."', eventImage='".$img."'
+                WHERE eventID =".$id);
 
                 $stmt->execute();
-                echo "Added";
+                echo "Updated";
             } else {
                 echo "Sorry, there was an error uploading your file.";
             }

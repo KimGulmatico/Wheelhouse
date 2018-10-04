@@ -14,15 +14,32 @@ class Admin extends Component {
             location: '',
             descrption: '',
             file: '',
+            show: 'Add',
+            events: [],
+            id: '',
         }
         
         this.inputs = this.inputs.bind(this)
         this.submit = this.submit.bind(this)
         this.handeFile = this.handeFile.bind(this)
+        this.getEvents = this.getEvents.bind(this)
+        this.delete = this.delete.bind(this)
+        this.update = this.update.bind(this)
+    }
+
+    componentDidMount() {
+        this.getEvents()
+    }
+
+    async getEvents() {
+        let res = await axios.get(`${connection.protocol}://${connection.serverphp}/wheelhouse/getEvents.php`)
+        console.log(res.data)
+        this.setState({events: res.data})
     }
 
     inputs(e) {
         this.setState({[e.target.name]: e.target.value})
+        console.log(e.target.value)
     }
 
     handeFile(e) {
@@ -42,16 +59,55 @@ class Admin extends Component {
             data.append('file', this.state.file);
             let res = await axios.post(`${connection.protocol}://${connection.serverphp}/wheelhouse/addEvents.php`, data, {crossdomain: true})
             alert(res.data)
-            if(res.data == 'done'){
+            if(res.data.toString().trim() == 'Added'){
                 this.setState({
-                    password: '',
                     title: '',
                     date: '',
                     by: '',
                     location: '',
                     descrption: '',
-                    file: ''
+                    file: '',
                 })
+                this.getEvents()
+            }
+        }
+        else{
+            alert('Fill all fields')
+        }
+    }
+
+    async delete(e) {
+        let res = await axios.get(`${connection.protocol}://${connection.serverphp}/wheelhouse/deleteEvents.php?id=${e.target.name}&pass=${this.state.password}`)
+        if(res){
+            alert(res.data)
+            this.getEvents()
+        }
+    }
+
+    async update() {
+        if(this.state.file != '') {
+            const data = new FormData();
+            data.append('id', this.state.id);
+            data.append('pass', this.state.password);
+            data.append('title', this.state.title);
+            data.append('date', this.state.date);
+            data.append('by', this.state.by);
+            data.append('loc', this.state.location);
+            data.append('desc', this.state.descrption);
+            data.append('file', this.state.file);
+            let res = await axios.post(`${connection.protocol}://${connection.serverphp}/wheelhouse/updateEvents.php`, data, {crossdomain: true})
+            alert(res.data)
+            if(res.data.toString().trim() == 'Updated'){
+                this.setState({
+                    title: '',
+                    date: '',
+                    by: '',
+                    location: '',
+                    descrption: '',
+                    file: '',
+                    id: '',
+                })
+                this.getEvents()
             }
         }
         else{
@@ -64,14 +120,38 @@ class Admin extends Component {
         return (<div align="center">
             <br/>
             <br/>
+            <legend class="uk-legend">Events</legend>
+            <div style={{maxWidth: '500px', padding: '10px'}}>
+            <div class="uk-margin">
+                <input class="uk-input" type="password" name="password" placeholder="Password" onChange={this.inputs} value={this.state.password}/>
+            </div>
+            <div class="uk-margin-medium-top">
+                <ul class="uk-flex-center" data-uk-tab>
+                    <li class="uk-active"><a href="#" onClick={()=>this.setState({show: 'Add'})}>Add</a></li>
+                    <li><a href="#" onClick={()=>this.setState({show: 'Update'})}>Update</a></li>
+                    <li><a href="#" onClick={()=>this.setState({show: 'Delete'})}>Delete</a></li>
+                </ul>
+            </div>
+            </div>
+            {(this.state.show == 'Add' || this.state.show == 'Update')?
             <div style={{maxWidth: '500px', padding: '10px'}}>
                 <form>
                     <fieldset class="uk-fieldset">
-                        <legend class="uk-legend">Add an Event</legend>
 
-                        <div class="uk-margin">
-                            <input class="uk-input" type="password" name="password" placeholder="Password" onChange={this.inputs} value={this.state.password}/>
-                        </div>
+                        {
+                            (this.state.show == 'Update')?
+                            <div class="uk-margin">
+                                <select class="uk-select" name="id" onChange={this.inputs} value={this.state.id}>
+                                    <option value="">Event ID</option>
+                                    {
+                                        this.state.events.map((event)=>{
+                                            return(<option key={event.id} value={event.id}>{event.title}</option>)
+                                        })
+                                    }
+                                    
+                                </select>
+                            </div>:null
+                        }
 
                         <div class="uk-margin">
                             <input class="uk-input" type="text" name="title" placeholder="Title" onChange={this.inputs} value={this.state.title}/>
@@ -100,8 +180,39 @@ class Admin extends Component {
                         </div>
                     </fieldset>
                 </form>
-                <button style={{float: 'right'}} class="uk-button uk-button-primary" onClick={this.submit}>Submit</button>
+                {
+                    (this.state.show == 'Add')?
+                    <button style={{float: 'right'}} class="uk-button uk-button-primary" onClick={this.submit}>Add</button>
+                    :(this.state.show == 'Update')?
+                    <button style={{float: 'right'}} class="uk-button uk-button-primary" onClick={this.update}>Update</button>
+                    :null
+                }
             </div>
+            :
+            <div style={{maxWidth: '500px', padding: '10px'}}>
+            <table class="uk-table uk-table-middle uk-table-divider">
+                <thead>
+                    <tr>
+                        <th>Event</th>
+                        <th class="uk-width-small">Action</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    {
+                        (this.state.events.length != 0)?
+                        this.state.events.map((event) => {
+                            return(
+                            <tr>
+                                <td class="uk-text-truncate">{event.title}</td>
+                                <td><button class="uk-button uk-button-default" type="button" name={event.id} onClick={this.delete}>Delete</button></td>
+                            </tr>)
+                        }): <div>No events yet...</div>
+    
+                    }
+                </tbody>
+            </table>
+            </div>
+            }
         </div>)
     }
 }
