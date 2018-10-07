@@ -1,5 +1,5 @@
 import React, { Component } from 'react'
-import '../AppStartup.css'
+import '../App.css'
 import Logo from './Logo'
 
 
@@ -17,7 +17,7 @@ class Navbar extends Component {
             marginTop: '20px',
             marginTop2: '-14px',
             colorContact: '#999',
-            btnhover: 'btnhover'
+            btnhover: 'btnhoverstrt'
         }
 
         this.updateDimensions = this.updateDimensions.bind(this)
@@ -44,9 +44,9 @@ class Navbar extends Component {
         window.addEventListener("resize", this.updateDimensions);
         window.onscroll = () => {
             if (window.pageYOffset >= 60)
-                this.setState({ color: '#fafafa', btnhover: 'btnhover2'})
+                this.setState({ color: '#fafafa', btnhover: 'btnhover2strt'})
             else
-                this.setState({ color: '#212121', btnhover: 'btnhover' })
+                this.setState({ color: '#212121', btnhover: 'btnhoverstrt' })
         }
     }
 
@@ -61,7 +61,7 @@ class Navbar extends Component {
     render() {
         return (
             <div>
-                <div style={{ marginTop: this.state.marginTop }} data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky navDark uk-light; cls-inactive: uk-navbar-transparent uk-dark; top: 200">
+                <div style={{ marginTop: this.state.marginTop }} data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky navDarkStart uk-light; cls-inactive: uk-navbar-transparent uk-dark; top: 200">
 
                     <nav class="uk-navbar-container" data-uk-navbar style={{maxHeight: this.state.navHeight}}>
                         <div class="uk-navbar-left" style={{ marginLeft: '5%', marginRight: 'auto' }}>

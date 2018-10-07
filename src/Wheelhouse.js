@@ -126,14 +126,10 @@ class Wheelhouse extends Component {
         <div className="uk-section-primary uk-preserve-color uk-background-default bodyHome">
         <div className="uk-position-relative">
         {/* <div style={{overflow: 'hidden'}}>
-        <img src="/images/home.jpg" alt="" style={{minHeight: '500px', minWidth: '500px'}}/>
+        <img src="/images/WheelBig.png" alt="" style={{minHeight: '100vh', minWidth: '500px'}}/>
         </div> */}
-        <div className="uk-background-cover uk-flex uk-flex-center uk-flex-middle" style={{backgroundImage: "url('images/home.jpg')"}} data-uk-height-viewport>
-                    {/* <div>
-                    <p class="uk-h2">Call Us</p>
-                    <p class="uk-h5">Questions about plans, pricing, or availability? <br/> Just have your people call our people.</p>
-                    <p class="hk-h5">1-877-796-2434</p>
-                    </div> */}
+        <div className="uk-background-cover uk-flex uk-flex-center uk-flex-middle backImage" data-uk-height-viewport>
+                    
         </div>
         <div className="uk-position-top">
         <NavBar/>

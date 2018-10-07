@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import NavBar from './ComponentsStartup/Navbar'
-import './AppStartup.css';
+import './App.css';
 import Body from './ComponentsStartup/Body';
 import axios from 'axios'
 import {connection} from './Connection'
@@ -127,7 +127,7 @@ class Wheelhouse extends Component {
         {/* <div style={{overflow: 'hidden'}}>
         <img src="/images/home.jpg" alt="" style={{minHeight: '500px', minWidth: '500px'}}/>
         </div> */}
-        <div className="uk-background-cover uk-flex uk-flex-center uk-flex-middle" style={{backgroundImage: "url('images/home.jpg')"}} data-uk-height-viewport>
+        <div className="uk-background-cover uk-flex uk-flex-center uk-flex-middle backImageStart" data-uk-height-viewport>
                     {/* <div>
                     <p class="uk-h2">Call Us</p>
                     <p class="uk-h5">Questions about plans, pricing, or availability? <br/> Just have your people call our people.</p>

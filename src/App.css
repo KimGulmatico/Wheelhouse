@@ -12,6 +12,10 @@
   background-color: #222 !important;
 }
 
+.navDarkStart {
+  background-color: #39f !important;
+}
+
 .card {
   margin:  50px;
 }
@@ -74,6 +78,24 @@
   border-color: rgba(255,255,255,.7) !important;
 }
 
+.btnhoverstrt {
+  color: #999 !important;
+  border-color: #999 !important;
+}
+.btnhoverstrt:hover {
+  color: #666 !important;
+  border-color: #666 !important;
+}
+
+.btnhover2strt {
+  color: rgba(255,255,255,.5) !important;
+  border-color: rgba(255,255,255,.5) !important;
+}
+.btnhover2strt:hover {
+  color: rgba(255,255,255,.7)!important;
+  border-color: rgba(255,255,255,.7) !important;
+}
+
 .radioBox {
   border: 1px solid #e5e5e5;
   padding: 10px;
@@ -105,7 +127,13 @@
   font-weight: bold;
   font-size: 12px;
 }
+.backImage {
+  background-image: url('./images/Whome.png');
+}
 
+.backImageStart {
+  background-image: url('./images/StartupHome.svg');
+}
 
 
 @media only screen and (max-width: 600px) {
@@ -116,5 +144,13 @@
   .eventsImage {
     width: 100%;
     height: auto;
+  }
+
+  .backImage {
+    background-image: url('./images/Wheel.png');
+  }
+
+  .backImageStart {
+    background-image: url('./images/StartupHomeS.svg');
   }
 }
