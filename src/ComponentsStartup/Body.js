@@ -40,7 +40,7 @@ class Body extends Component {
                     <br/>
                     <div className="uk-card uk-grid-collapse uk-child-width-1-2@s" data-uk-grid>
                         <div className="uk-card-media-left uk-cover-container">
-                            <img src="images/strt3.jpg" alt="" data-uk-cover/>
+                            <img src="images/strt3.png" alt="" data-uk-cover/>
                             <canvas width="600" height="400"></canvas>
                         </div>
                         <div>
