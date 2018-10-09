@@ -24,8 +24,8 @@ class Footer extends Component {
                 <div>
                     <div class="uk-padding" style={{paddingTop: '50px'}}>
                         <a href="" class="uk-icon-button uk-margin-large-right" data-uk-icon="twitter" style={{color: '#424242'}}></a>
-                        <a href="" class="uk-icon-button  uk-margin-large-right" data-uk-icon="facebook" style={{color: '#424242'}}></a>
-                        <a href="" class="uk-icon-button  uk-margin-large-right" data-uk-icon="instagram" style={{color: '#424242'}}></a>                
+                        <a href="https://www.facebook.com/supthewheelhouse/" class="uk-icon-button  uk-margin-large-right" data-uk-icon="facebook" style={{color: '#424242'}}></a>
+                        <a href="https://www.instagram.com/thewheelhousephilippines/" class="uk-icon-button  uk-margin-large-right" data-uk-icon="instagram" style={{color: '#424242'}}></a>                
                         <a href="" class="uk-icon-button" data-uk-icon="google-plus" style={{color: '#424242'}}></a>             
                     </div>
                 </div>
