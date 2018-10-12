@@ -17,7 +17,7 @@ class Events extends Component {
     }
 
     async getEvents() {
-        let res = await axios.get(`${connection.protocol}://${connection.serverphp}/wheelhouse/getEvents.php`)
+        let res = await axios.get(`${connection.protocol}://${connection.serverphp}/startupph/getEvents.php`)
         console.log(res.data)
         this.setState({events: res.data})
     }
@@ -27,7 +27,6 @@ class Events extends Component {
             <div style={{ maxWidth: '1300px' }}>
                 <div align="left" className="eventsTitle">
                     <p className="uk-h1 cardText">WHAT'S UP & COMING</p>
-                    <p className="uk-h5 cardText" style={{ marginTop: '-17px' }}>The Wheelhouse caters events and workshops</p>
                 </div>
                 
                 {
@@ -36,7 +35,7 @@ class Events extends Component {
                         return (<div>
                             <div className="uk-flex-middle padding" data-uk-grid style={{marginTop: 0, marginBottom: 0}}>
                                 <div className="uk-width-1-3@m">
-                                    <img src={`${connection.protocol}://${connection.serverphp}/wheelhouse/uploads/${event.img}`} alt="Image" className="eventsImage"/>
+                                    <img src={`${connection.protocol}://${connection.serverphp}/startupph/uploads/${event.img}`} alt="Image" className="eventsImage"/>
                                 </div>
                                 <div className="uk-width-2-3@m" align="left">
                                     <h3 className="uk-card-title" style={{margin: 0, padding: 0}}>{event.title}</h3>

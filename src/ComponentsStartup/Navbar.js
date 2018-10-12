@@ -42,11 +42,20 @@ class Navbar extends Component {
     componentDidMount() {
         this.updateDimensions();
         window.addEventListener("resize", this.updateDimensions);
+        var prevScrollpos = window.pageYOffset;
         window.onscroll = () => {
+            var currentScrollPos = window.pageYOffset;
             if (window.pageYOffset >= 60)
                 this.setState({ color: '#fafafa', btnhover: 'btnhover2strt'})
             else
                 this.setState({ color: '#212121', btnhover: 'btnhoverstrt' })
+            
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-65px";
+            }
+            prevScrollpos = currentScrollPos;
         }
     }
 
@@ -63,7 +72,7 @@ class Navbar extends Component {
             <div>
                 <div style={{ marginTop: this.state.marginTop }} data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky navDarkStart uk-light; cls-inactive: uk-navbar-transparent uk-dark; top: 200">
 
-                    <nav class="uk-navbar-container" data-uk-navbar style={{maxHeight: this.state.navHeight}}>
+                    <nav id="navbar" class="uk-navbar-container" data-uk-navbar style={{maxHeight: this.state.navHeight}}>
                         <div class="uk-navbar-left" style={{ marginLeft: '5%', marginRight: 'auto' }}>
                             <ul className="uk-navbar-nav">
                                 <li>
@@ -76,7 +85,8 @@ class Navbar extends Component {
                         <div class="uk-navbar-right" style={{marginLeft: 'auto', marginRight: '5%' }}>
                             <ul class="uk-navbar-nav uk-visible@l" style={{ marginLeft: 'auto', marginRight: '0' }}>
                                 <li><a href="#about" data-uk-scroll data-offset="100">About</a></li>
-                                <li><a href="#community" data-uk-scroll data-offset="100">Community</a></li>                               
+                                <li><a href="#programs" data-uk-scroll data-offset="100">Programs</a></li>     
+                                <li><a href="#events" data-uk-scroll data-offset="100">Events</a></li>                             
                                 <li><a href="#partners" data-uk-scroll data-offset="100">Partners</a></li>
                             </ul>
                             <button data-uk-toggle="target: #modal-full" className={"uk-visible@l uk-button uk-button-default "+this.state.btnhover} href="#" style={{ borderRadius: '50px'}}>Contact us</button>

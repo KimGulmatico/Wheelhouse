@@ -146,7 +146,8 @@ class Wheelhouse extends Component {
                   <ul className="uk-nav uk-nav-default">
                       <li className="uk-nav-header">Menu</li>
                       <li><a href="#about" data-uk-scroll data-offset="100" onClick={this.closeOffCanvas}><span className="uk-margin-small-right" data-uk-icon="icon: info"></span> About</a></li>
-                      <li><a href="#community" data-uk-scroll data-offset="100" onClick={this.closeOffCanvas}><span className="uk-margin-small-right" data-uk-icon="icon: users"></span> Community</a></li>
+                      <li><a href="#programs" data-uk-scroll data-offset="100" onClick={this.closeOffCanvas}><span className="uk-margin-small-right" data-uk-icon="icon: users"></span> Programs</a></li>
+                      <li><a href="#events" data-uk-scroll data-offset="100" onClick={this.closeOffCanvas}><span className="uk-margin-small-right" data-uk-icon="icon: users"></span> Events</a></li>
                       <li><a href="#partners" data-uk-scroll data-offset="100" onClick={this.closeOffCanvas}><span className="uk-margin-small-right" data-uk-icon="icon: link"></span> Partners</a></li>
                       <li><a data-uk-toggle="target: #modal-full" onClick={this.closeOffCanvas}><span className="uk-margin-small-right" data-uk-icon="icon: phone"></span> Contact us</a></li>
                   </ul>

@@ -42,11 +42,20 @@ class Navbar extends Component {
     componentDidMount() {
         this.updateDimensions();
         window.addEventListener("resize", this.updateDimensions);
+        var prevScrollpos = window.pageYOffset;
         window.onscroll = () => {
+            var currentScrollPos = window.pageYOffset;
             if (window.pageYOffset >= 60)
-                this.setState({ color: '#fafafa', btnhover: 'btnhover2'})
+                this.setState({ color: '#fafafa', btnhover: 'btnhover2strt'})
             else
-                this.setState({ color: '#212121', btnhover: 'btnhover' })
+                this.setState({ color: '#212121', btnhover: 'btnhoverstrt' })
+            
+            if (prevScrollpos > currentScrollPos) {
+                document.getElementById("navbar").style.top = "0";
+            } else {
+                document.getElementById("navbar").style.top = "-80px";
+            }
+            prevScrollpos = currentScrollPos;
         }
     }
 
@@ -63,7 +72,7 @@ class Navbar extends Component {
             <div>
                 <div style={{ marginTop: this.state.marginTop }} data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky navDark uk-light; cls-inactive: uk-navbar-transparent uk-dark; top: 200">
 
-                    <nav class="uk-navbar-container" data-uk-navbar style={{maxHeight: this.state.navHeight}}>
+                    <nav id="navbar" class="uk-navbar-container" data-uk-navbar style={{maxHeight: this.state.navHeight}}>
                         <div class="uk-navbar-left" style={{ marginLeft: '5%', marginRight: 'auto' }}>
                             <ul className="uk-navbar-nav">
                                 <li>

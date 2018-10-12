@@ -3,6 +3,7 @@ import Community from './Community'
 import ContactUs from './ContactUs'
 import Partners from './Partners'
 import Footer from './Footer'
+import Events from './Events';
 
 class Body extends Component {
     constructor(props){
@@ -24,12 +25,12 @@ class Body extends Component {
                     <div id="about" style={{marginTop: '30px', marginBottom: '30px'}} align="left">
                         <div data-uk-scrollspy="cls: uk-animation-slide-right; repeat: false">
                             <div style={{padding: '20px'}}>
-                            <p className="uk-h1 cardText">REDEFINE THE WAY <br/> YOU WORK</p>
-                            <p className="uk-h5 cardText" style={{marginTop: '-17px'}}>Connect. Collaborate. Create</p>
+                            <p className="uk-h1 cardText">START YOUR ENTREPRENEURIAL <br/> JOURNEY WITH US</p>
                             <br/>
-                            We redefine diversity and collaboration by creating a lifestyle space with a unique 
-                            entrepreneurial spirit that is responsive to the productivity needs and stylistic 
-                            preferences of today’s mobile and creative workforce.
+                            Startup Project is an initiative for aspiring entrepreneurs yearning to bring their 
+                            ideas into reality. A dynamic and forward-thinking organization that specializes in 
+                            entrepreneurial leadership and business development placing emphasis on the current 
+                            drive towards globalization.
                             </div>
                         </div>
                     </div>
@@ -44,20 +45,17 @@ class Body extends Component {
                             <canvas width="600" height="400"></canvas>
                         </div>
                         <div>
-                            <div className="uk-card-body">
-                                <h3 className="uk-card-title">WE ARE MORE THAN JUST A SPACE</h3>
-                                <p className="uk-text-left"><b>Classes & Workshops</b> - our talented team offers a variety of classes and 
-                                   workshops on creative thinking, ideation techniques, problem reframing, 
-                                   presentation skills, project management, data visualization, and improv.
-                                </p>
-                                <p className="uk-text-left"><b>Consulting Services</b> - For businesses that want more hands on assistance we will
-                                   provide consulting services and employee training. 
-                                   Services might include: brainstorming facilitation, branding, innovative marketing, 
-                                   workspace and workflow analysis. 
-                                </p>
-                                <p className="uk-text-left"><b>Curated Events</b> - Meaningful events hosted by our own members. 
-                                    This provides our members to showcase who they are and what 
-                                    they can do for the community.
+                            <div id="programs" className="uk-card-body">
+                                <h3 className="uk-card-title">IGNITE THE ENTREPRENEURIAL SPIRIT IN YOU</h3>
+                                <p className="uk-text-left">
+                                Through collaboration and innovation, we develop diverse initiative programs that fuses academic 
+                                and practitioner perspectives. These programs introduce participants to the growing 
+                                innovation-driven community in the Philippine Startup Ecosystem. We actively promote 
+                                entrepreneurship through different activities and workshops that are own startup businesses use to successfully turn their ideas into reality. 
+                                <br/>
+                                <br/>
+                                We provide accelerated-learning programs for members to learn and practice leadership and innovation principles taught by 
+                                experienced entrepreneurs that will be your mentors.
                                 </p>
                             </div>
                         </div>
@@ -70,14 +68,12 @@ class Body extends Component {
                         </div>
                         <div>
                             <div className="uk-card-body">
-                                <h3 className="uk-card-title">WE PROVIDE A NEW PERSPECTIVE</h3>
-                                <p className="">
-                                Wheelhouse creates an environment that 
-                                fosters innovation and ideation.
-                                </p>
-                                <p className="">
-                                We continue to develop creative habits 
-                                that put you ahead of the current, ensuring you are leading the competition.
+                                <h3 className="uk-card-title">CREATING OPPORTUNITIES</h3>
+                                <p>
+                                Our aim is to provide the necessary resources to support 
+                                our members to create successful ideas that will become 
+                                financially viable and freestanding - a new breed of entrepreneurs 
+                                commercializing technologies, creating jobs, and strengthening local economies.
                                 </p>
                             </div>
                         </div>
@@ -90,8 +86,19 @@ class Body extends Component {
                         </div>
                         <div>
                             <div className="uk-card-body">
-                                <h3 className="uk-card-title">Media Left</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                <h3 className="uk-card-title">HOW WE DO IT</h3>
+                                <p className="uk-text-left">We expand and extend services by creating a lifestyle space
+                                  where members can work to make a life and not just a living.
+                                </p>
+                                <p className="uk-text-left"><b>Collaboration</b> - we work closely with key players in the ecosystem to
+                                 connect members with the best entrepreneurship programs.
+                                </p>
+                                <p className="uk-text-left"><b>Diversity</b> -  we combine a range of critical perspectives.
+                                </p>
+                                <p className="uk-text-left"><b>Analysis</b> - each engagements we try new programs and activities. 
+                                </p>
+                                <p className="uk-text-left"><b>Integrate</b> - we operate on a hybrid model that fuses academic and practitioner perspectives 
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -123,7 +130,7 @@ class Body extends Component {
                 <hr class="uk-divider-icon"/>
                 <br/>
                 <br/>
-                <Community/>
+                <Events/>
                 <br/>
                 <br/>
                 {/* <ContactUs/> */}
