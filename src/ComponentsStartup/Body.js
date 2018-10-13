@@ -106,7 +106,7 @@ class Body extends Component {
                     <br/>
                 </div>
 
-                <div className="uk-child-width-1-2@s" data-uk-grid style={{maxWidth: '1300px'}}> 
+                {/* <div className="uk-child-width-1-2@s" data-uk-grid style={{maxWidth: '1300px'}}> 
                     <div style={{marginTop: '30px', marginBottom: '30px'}} align="right">
                          <div data-uk-scrollspy="cls: uk-animation-slide-left; repeat: false">
                             <div style={{padding: '20px'}}>
@@ -126,7 +126,7 @@ class Body extends Component {
                             <img className="uk-border-circle" src="images/strttara.jpg" width="350" height="350" alt="Border circle"/>
                         </div>
                     </div>
-                </div>
+                </div> */}
                 <hr class="uk-divider-icon"/>
                 <br/>
                 <br/>

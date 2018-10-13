@@ -17,7 +17,7 @@ class Plans extends Component {
                 </div>
                 
                 <div style={{maxWidth: '1000px'}}>
-                <div class="uk-child-width-1-2@m uk-grid-small uk-grid-match" data-uk-grid>
+                <div class="uk-child-width-1-2@m uk-grid-large uk-grid-match" data-uk-grid>
                 <div>
                     <div class="uk-card uk-card-default">
                         <div class="uk-card-media-top">
@@ -142,7 +142,7 @@ class Plans extends Component {
                 </div>
                 </div>
 
-                <div class="uk-child-width-1-1@m uk-grid-small uk-grid-match" data-uk-grid>
+                <div class="uk-child-width-1-1@m uk-grid-large uk-grid-match" data-uk-grid>
                     <div>
                         <div class="uk-card uk-card-default">
                             <div class="uk-card-media-top">

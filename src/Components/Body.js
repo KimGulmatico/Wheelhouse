@@ -48,19 +48,16 @@ class Body extends Component {
                         </div>
                         <div>
                             <div className="uk-card-body">
-                                <h3 className="uk-card-title">WE ARE MORE THAN JUST A SPACE</h3>
-                                <p className="uk-text-left"><b>Classes & Workshops</b> - our talented team offers a variety of classes and 
-                                   workshops on creative thinking, ideation techniques, problem reframing, 
-                                   presentation skills, project management, data visualization, and improv.
-                                </p>
-                                <p className="uk-text-left"><b>Consulting Services</b> - For businesses that want more hands on assistance we will
-                                   provide consulting services and employee training. 
-                                   Services might include: brainstorming facilitation, branding, innovative marketing, 
-                                   workspace and workflow analysis. 
-                                </p>
-                                <p className="uk-text-left"><b>Curated Events</b> - Meaningful events hosted by our own members. 
-                                    This provides our members to showcase who they are and what 
-                                    they can do for the community.
+                                <h3 className="uk-card-title">WHAT IS THE WHEELHOUSE?</h3>
+                                <p className="uk-text-left">We create a divers and collaborative space that
+                                is responsive to the productivity needs and stylistic preferences of today’s 
+                                creative work force.
+                                <br/>
+                                <br/>
+                                The Wheelhouse is space that connects inspiring entrepreneurs, startup mentors and
+                                enablers yearning to bring ideas into reality through social engagements and workshops in 
+                                a collaborative environment. A dynamic, forward-thinking community that provides expertise,
+                                support and connections that members can take advantage of to become a effective entrepreneurs.
                                 </p>
                             </div>
                         </div>
@@ -93,8 +90,20 @@ class Body extends Component {
                         </div>
                         <div>
                             <div className="uk-card-body">
-                                <h3 className="uk-card-title">Media Left</h3>
-                                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt.</p>
+                                <h3 className="uk-card-title">WE ARE MORE THAN JUST A SPACE</h3>
+                                <p className="uk-text-left"><b>Classes & Workshops</b> - our talented team offers a variety of classes and 
+                                   workshops on creative thinking, ideation techniques, problem reframing, 
+                                   presentation skills, project management, data visualization, and improv.
+                                </p>
+                                <p className="uk-text-left"><b>Consulting Services</b> - For businesses that want more hands on assistance we will
+                                   provide consulting services and employee training. 
+                                   Services might include: brainstorming facilitation, branding, innovative marketing, 
+                                   workspace and workflow analysis. 
+                                </p>
+                                <p className="uk-text-left"><b>Curated Events</b> - Meaningful events hosted by our own members. 
+                                    This provides our members to showcase who they are and what 
+                                    they can do for the community.
+                                </p>
                             </div>
                         </div>
                     </div>

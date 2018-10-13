@@ -33,14 +33,13 @@ class Navbar extends Component {
 
         (update_width <= 640) ? this.setState({ left: 11, marginTop: '0', marginTop2: '0', logoHeight: 40 , logoWidth: 150, navHeight: 65}) : this.setState({ left: 0, marginTop: '20px', marginTop2: '-14px', logoHeight: 50, logoWidth: 200, navHeight: 100})
 
-
     }
 
     /**
      * Add event listener
      */
     componentDidMount() {
-        this.updateDimensions();
+        setInterval(this.updateDimensions, 1000)
         window.addEventListener("resize", this.updateDimensions);
         var prevScrollpos = window.pageYOffset;
         window.onscroll = () => {
@@ -49,11 +48,12 @@ class Navbar extends Component {
                 this.setState({ color: '#fafafa', btnhover: 'btnhover2strt'})
             else
                 this.setState({ color: '#212121', btnhover: 'btnhoverstrt' })
-            
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
-            } else {
-                document.getElementById("navbar").style.top = "-80px";
+            if(this.state.navHeight == 65){
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("navbar").style.top = "0";
+                } else {
+                    document.getElementById("navbar").style.top = "-80px";
+                }
             }
             prevScrollpos = currentScrollPos;
         }

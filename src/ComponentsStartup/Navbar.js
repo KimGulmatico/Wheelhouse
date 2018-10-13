@@ -40,7 +40,7 @@ class Navbar extends Component {
      * Add event listener
      */
     componentDidMount() {
-        this.updateDimensions();
+        setInterval(this.updateDimensions,1000)
         window.addEventListener("resize", this.updateDimensions);
         var prevScrollpos = window.pageYOffset;
         window.onscroll = () => {
@@ -49,11 +49,12 @@ class Navbar extends Component {
                 this.setState({ color: '#fafafa', btnhover: 'btnhover2strt'})
             else
                 this.setState({ color: '#212121', btnhover: 'btnhoverstrt' })
-            
-            if (prevScrollpos > currentScrollPos) {
-                document.getElementById("navbar").style.top = "0";
-            } else {
-                document.getElementById("navbar").style.top = "-65px";
+            if(this.state.navHeight == 65){
+                if (prevScrollpos > currentScrollPos) {
+                    document.getElementById("navbar").style.top = "0";
+                } else {
+                    document.getElementById("navbar").style.top = "-65px";
+                }
             }
             prevScrollpos = currentScrollPos;
         }
