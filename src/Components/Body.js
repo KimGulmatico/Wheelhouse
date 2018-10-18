@@ -136,9 +136,9 @@ class Body extends Component {
                 <Ameneties/>
                 <hr class="uk-divider-icon"/>
                 <Events/>
+                {/* <br/>
                 <br/>
-                <br/>
-                <Community/>
+                <Community/> */}
                 <br/>
                 <br/>
                 <Plans/>

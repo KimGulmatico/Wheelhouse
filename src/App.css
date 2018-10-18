@@ -137,7 +137,11 @@
 }
 
 .backImageStart {
-  background-image: url('./images/StartupHome.svg');
+  background-image: url('./images/StartupHomeNew.svg');
+}
+
+ul {
+  list-style: none;
 }
 
 
@@ -156,6 +160,6 @@
   }
 
   .backImageStart {
-    background-image: url('./images/StartupHomeS.svg');
+    background-image: url('./images/StartupHomeNew.svg');
   }
 }

@@ -29,10 +29,6 @@ class Plans extends Component {
                         </div>
                         <div class="uk-card-body" align="left" style={{marginTop: '-20px'}}>
                             <p>Looking for a spot to work and chill for the day? Try us out and we’ll give you a tour!</p>
-                            <ul>
-                                <li>High Speed Internet</li>
-                                <li>Complimentary Refreshments</li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -47,10 +43,6 @@ class Plans extends Component {
                         </div>
                         <div class="uk-card-body" align="left" style={{marginTop: '-20px'}}>
                             <p>Have the  flexibility to select where you sit everyday in our open lounge area.</p>
-                            <ul>
-                                <li>Unlimited Visits</li>
-                                <li>10% Discount WH Events</li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -65,11 +57,6 @@ class Plans extends Component {
                         </div>
                         <div class="uk-card-body" align="left" style={{marginTop: '-20px'}}>
                             <p>Make The Wheelhouse your office address.</p>
-                            <ul>
-                                <li>Unlimited Visits</li>
-                                <li>10% Discount WH Events</li>
-                                <li>Mail and Package Acceptance</li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -86,10 +73,6 @@ class Plans extends Component {
                             <p>Ideal for Thesis/Study Groups and Tutoring Services, this plan is perfect 
                             for your peer-to-peer study activities or just hang and play board games while 
                             taking a sip of your daily dose of coffee</p>
-                            <ul>
-                                <li>Unlimited Visits for 3</li>
-                                <li>Option to Avail Meeting Room Credits</li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -105,14 +88,6 @@ class Plans extends Component {
                         <div class="uk-card-body" align="left" style={{marginTop: '-20px'}}>
                             <p>Ideal for Startups, an affordable but quality-driven plan for 
                                 entrepreneurs just starting their business.</p>
-                            <ul>
-                                <li>Unlimited Visits for 3</li>
-                                <li>3 Free Event Passes</li>
-                                <li>10% Discount WH Events</li>
-                                <li>Locker Privileges</li>
-                                <li>Monthly Business Consultations and Monitoring Privileges</li>
-                                <li>2 Hours Meeting Room Usage</li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -127,16 +102,6 @@ class Plans extends Component {
                         </div>
                         <div class="uk-card-body" align="left" style={{marginTop: '-20px'}}>
                             <p>Ideal for Early-Stage Businesses, this plan offers higher amenities and privileges.</p>
-                            <ul>
-                                <li>Unlimited Visits for 5</li>
-                                <li>Permanent Desk Subscription</li>
-                                <li>5 Free Event Passes</li>
-                                <li>5 Free Guest Passes</li>
-                                <li>10% Discount WH Events</li>
-                                <li>Locker Privileges</li>
-                                <li>Monthly Business Consultations and Monitoring Privileges</li>
-                                <li>4 Hours Meeting Room Usage</li>
-                            </ul>
                         </div>
                     </div>
                 </div>
@@ -156,17 +121,6 @@ class Plans extends Component {
                                 <p>An exclusive Lounge for Founders where they can network and share ideas
                                    with other founders, investors, media, industry executives, academics 
                                    and creatives through curated private events on the rooftop.</p>
-                                <ul>
-                                    <li>Rooftop Lounge Access</li>
-                                    <li>Elite Membership Status</li>
-                                    <li>Unlimited Access</li>
-                                    <li>Invites to Private Rooftop Events</li>
-                                    <li> Invites to Members’ Events</li>
-                                    <li>5 Free Guest Passes</li>
-                                    <li>Locker Privileges</li>
-                                    <li>4 Hours Meeting Room Usage</li>
-                                    <li>LIMITED MEMBERSHIP SLOTS</li>
-                                </ul>
                             </div>
                         </div>
                     </div>

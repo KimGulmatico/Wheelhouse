@@ -71,7 +71,7 @@ class Navbar extends Component {
     render() {
         return (
             <div>
-                <div style={{ marginTop: this.state.marginTop }} data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky navDarkStart uk-light; cls-inactive: uk-navbar-transparent uk-dark; top: 200">
+                <div data-uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar navDark">
 
                     <nav id="navbar" class="uk-navbar-container" data-uk-navbar style={{maxHeight: this.state.navHeight}}>
                         <div class="uk-navbar-left" style={{ marginLeft: '5%', marginRight: 'auto' }}>
