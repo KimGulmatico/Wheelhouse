@@ -12,7 +12,7 @@ class Navbar extends Component {
             logoWidth: 200,
             logoHeight: 50,
             navHeight: 100,
-            color: '#000',
+            color: '#fff',
             left: 0,
             marginTop: '20px',
             marginTop2: '-14px',
@@ -71,13 +71,13 @@ class Navbar extends Component {
     render() {
         return (
             <div>
-                <div data-uk-sticky="sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky; bottom: #transparent-sticky-navbar navDark">
+               <div style={{ marginTop: this.state.marginTop }} data-uk-sticky="animation: uk-animation-slide-top; sel-target: .uk-navbar-container; cls-active: uk-navbar-sticky navDarkStart uk-light; cls-inactive: uk-navbar-transparent uk-dark; top: 200">
 
                     <nav id="navbar" class="uk-navbar-container" data-uk-navbar style={{maxHeight: this.state.navHeight}}>
                         <div class="uk-navbar-left" style={{ marginLeft: '5%', marginRight: 'auto' }}>
                             <ul className="uk-navbar-nav">
                                 <li>
-                                    <Logo width={this.state.logoWidth} height={this.state.logoHeight} left={this.state.left} color={this.state.color} />
+                                    <Logo width={this.state.logoWidth} height={this.state.logoHeight} left={this.state.left} color={"#fff"} />
                                 </li>
                             </ul>
 

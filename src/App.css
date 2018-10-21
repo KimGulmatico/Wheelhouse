@@ -18,7 +18,7 @@
 }
 
 .navDarkStart {
-  background-color: #39f !important;
+  background-color: #3F5CA5 !important;
 }
 
 .card {
@@ -133,11 +133,12 @@
   font-size: 12px;
 }
 .backImage {
-  background-image: url('./images/Whome.png');
+  background-image: url('./images/Whome.jpg');
 }
 
 .backImageStart {
-  background-image: url('./images/StartupHomeNew.svg');
+  /* background-image: url('./images/StartupHomeNew.svg'); */
+  background-image: url('./images/VentureIdea.svg');
 }
 
 ul {
@@ -160,6 +161,6 @@ ul {
   }
 
   .backImageStart {
-    background-image: url('./images/StartupHomeNew.svg');
+    background-image: url('./images/VentureIdea1.svg');
   }
 }
